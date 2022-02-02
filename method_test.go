@@ -9,9 +9,3 @@ func FuzzBrokenMethod(f *testing.F) {
     BrokenMethod(str)
   })
 }
-
-func FuzzBrokenMethodNoSeed(f *testing.F) {
-  f.Fuzz(func(t *testing.T, str string) {
-    BrokenMethod(str)
-  })
-}
