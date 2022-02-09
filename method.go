@@ -9,3 +9,17 @@ func BrokenMethod(Data string) bool {
 		Data[2] == 'U' &&
 		Data[3] == 'R'
 }
+
+
+func NumberInputMethod(Data1 int32, Data2 uint64, Data3 float32) int {
+    if Data1 < 0 || Data3 < 0 {
+        return -1
+    }
+
+    if Data2 > 10 {
+        return 1
+    }
+
+    return 0
+}
+
