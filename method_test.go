@@ -17,7 +17,8 @@ func FuzzBrokenMethodNoSeed(f *testing.F) {
 }
 
 func FuzzTestNumberInputMethod(f *testing.F) {
-  f.Fuzz(func(t *testing.T, d1 int32, d2 uint64, d3 float32) {
-    NumberInputMethod(d1, d2, d3)
+  f.Add(true)
+  f.Fuzz(func(t *testing.T, data bool) {
+    NumberInputMethod(data)
   })
 }
