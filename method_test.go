@@ -11,6 +11,7 @@ func FuzzBrokenMethod(f *testing.F) {
 }
 
 func FuzzBrokenMethodNoSeed(f *testing.F) {
+  f.Add("F")
   f.Fuzz(func(t *testing.T, str string) {
     BrokenMethod(str)
   })
