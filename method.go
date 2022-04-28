@@ -12,7 +12,7 @@ func BrokenMethod(Data string) bool {
 
 func NumberInputMethod(Data1 bool, Data2 int, Data3 string) int {
     if Data1 {
-        return 1 / 0
+        return 1
     }
 
     if Data2 > 0 {
